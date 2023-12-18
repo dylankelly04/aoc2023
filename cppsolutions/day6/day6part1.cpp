@@ -4,38 +4,16 @@ using namespace std;
 
 int main()
 {
-    int countone = 0;
-    for (int i = 0; i < 60; i++)
+    long countone = 0;
+    for (long i = 0; i < 60947882; i++)
     {
-        if (i * (60 - i) > 475)
+        long l = i * (60947882 - i);
+        cout << l << endl;
+        if (l > 475213810151650)
         {
             countone++;
         }
     }
-    int counttwo = 0;
-    for (int i = 0; i < 94; i++)
-    {
-        if (i * (94 - i) > 2138)
-        {
-            counttwo++;
-        }
-    }
-    int countthree = 0;
-    for (int i = 0; i < 78; i++)
-    {
-        if (i * (78 - i) > 1015)
-        {
-            countthree++;
-        }
-    }
-    int countfour = 0;
-    for (int i = 0; i < 82; i++)
-    {
-        if (i * (82 - i) > 1650)
-        {
-            countfour++;
-        }
-    }
-    cout << countone * counttwo * countthree * countfour << endl;
+    cout << countone << endl;
     return 0;
 }
